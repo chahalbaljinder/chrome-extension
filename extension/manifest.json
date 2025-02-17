@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Voice LLM Communicator",
+  "version": "1.0",
+  "description": "Voice communication between devices powered by LLMs",
+  "permissions": [
+      "storage",
+      "tabs",
+      "activeTab",
+      "webNavigation",
+      "webRequest"
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "background": {
+      "service_worker": "background.js"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}

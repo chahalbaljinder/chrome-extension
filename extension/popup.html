@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice LLM Communicator</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Voice LLM Communicator</h2>
+        <div id="connectionSetup">
+            <h3>Select Device Mode:</h3>
+            <button id="hostMode" class="btn">Host Device</button>
+            <button id="clientMode" class="btn">Client Device</button>
+        </div>
+        <div id="deviceList" style="display: none;">
+            <h3>Available Devices:</h3>
+            <ul id="devices"></ul>
+            <input type="text" id="connectionCode" placeholder="Enter connection code">
+            <button id="connect" class="btn">Connect</button>
+        </div>
+        <div id="controls" style="display: none;">
+            <button id="startRecording" class="btn">Start Recording</button>
+            <button id="stopRecording" class="btn">Stop Recording</button>
+            <div id="status" class="status"></div>
+            <div id="responseArea" class="response"></div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
